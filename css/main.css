@@ -13,6 +13,7 @@ body {
 
 .header-image {
    background-color: #000000;
+   background-size: cover;
    background-image: url(../img/clothes.jpg); 
    background-repeat: no-repeat;
    width: 100%;
@@ -28,8 +29,6 @@ body {
     min-height: 701px;
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 20%, rgba(75, 170, 230, 0.4) 40%, rgba(0, 0, 0, 0.9) 70%)
 }
 
@@ -40,7 +39,9 @@ body {
     color: white;
     position: absolute;
     z-index: 1;
+
 }
+
 
 .header-text {
     margin-top: 200px;
@@ -60,9 +61,18 @@ body {
     margin-top: 620px;
 }
 
-.arrow {
-    cursor: pointer;
-   font-size: 34px;
+a.arrow {
+    font-size: 34px;
+    font-weight: thin;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+a.arrow:hover {
+    top: 10px;
+    color: white;
 }
 
 
@@ -71,7 +81,7 @@ body {
    ======================== */
 
 
-.head-button {
+a.head-button {
   display: inline-block;
   width: 140px;
   cursor: pointer;
@@ -122,10 +132,24 @@ body {
 
 
 /* ========================
-         FOOTER TITLE
+          CAROUSEL
+   ======================== */
+
+.carousel {
+    width: 100%;
+    min-height: 701px;
+    background-color: #999999;
+    margin-top: 200px;
+}
+
+
+/* ========================
+            FOOTER 
    ======================== */
 
 .footer-title {
     margin-top: 80px;
 }
+
+
 
