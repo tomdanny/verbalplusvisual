@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 
 body {
@@ -30,6 +31,7 @@ body {
 }
 
 .header-text-container {
+  position: relative;
   margin-top: 20%;
 }
 
@@ -45,11 +47,12 @@ body {
 
 
 .header-text {
-    margin-top: 200px;
+    /*margin-top: 20%;*/
 }
 
 .header-subtext {
-    margin-top: 330px;
+    position: relative;
+    margin-top: 150px;
     font-size: 11px;
 
 }
@@ -59,7 +62,8 @@ body {
 }
 
 .header-arrow {
-    margin-top: 620px;
+    position: relative;
+    /*margin-top: 15%;*/
 }
 
 a.arrow {
@@ -95,7 +99,7 @@ a.head-button {
   text-align: center;
   outline: none;
   text-decoration: none;
-  margin-top: 380px;
+  margin-top: 10px;
   transition: background-color 0.2s ease-out,
               color 0.2s ease-out;
 }
@@ -217,7 +221,7 @@ nav {
    ======================== */
 
 img {
-  background: url('../img/preloader.gif') no-repeat;
+  /*background: url('../img/preloader.gif') no-repeat;*/
 }
 
 
@@ -252,9 +256,269 @@ img {
             FOOTER 
    ======================== */
 
-.footer-title {
-    margin-top: 80px;
+#mainFooter {
+  margin-top: 40px;
+  height: 250px;
 }
+
+
+
+
+/* ========================
+            SOCIAL 
+   ======================== */
+
+/* footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+  background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+  background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+  background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+  color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  font-size:20px;
+}
+.social-circle li i {
+  margin:0;
+  line-height:50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-circle a {
+ background-color: #D3D3D3;   
+}
+
+
+
+/* ========================
+         MEDIA QUERY 
+   ======================== */
+
+
+@media only screen and (min-width: 375px) {
+
+  .header-arrow {
+    margin-top: 65%;
+  }
+
+  .header-subtext {
+    margin-top: 220px;
+    font-size: 11px;
+  }
+
+  .header-text {
+    font-size: 34px;
+    margin-top: 90px;
+  }
+
+  .header-text-container {
+    margin-top: 15%;
+  }
+
+  a.head-button {
+    display: inline-block;
+    width: 130px;
+  }
+
+  #footerRights {
+    margin-top: 140px;
+  }
+
+}
+
+
+@media only screen and (min-width: 414px) {
+
+  .header-arrow {
+    margin-top: 70%;
+  }
+
+  .header-text {
+    font-size: 36px;
+  }
+
+  .header-subtext {
+    font-size: 12px;
+  }
+
+  a.head-button {
+    display: inline-block;
+    width: 140px;
+  }
+
+  #footerRights {
+    margin-top: 110px;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .header-arrow {
+    margin-top: 55%;
+  }
+
+  .header-text-container {
+    margin-top: 35%;
+  }
+
+  .header-text {
+    font-size: 41px;
+  }
+
+  .header-subtext {
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  a.head-button {
+    width: 160px;
+  }
+
+  .social-circle li a {
+    margin-top: 5px;
+  } 
+
+  #footerRights {
+    margin-top: 0;
+  }
+
+  .footerWidget {
+    margin-top: 20px;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+  .header-arrow {
+    margin-top: 23%;
+  }
+
+  .header-text-container {
+    margin-top: 15%;
+  }
+
+  .header-text {
+    font-size: 36px;
+  }
+
+  .header-subtext {
+    padding-top: 0px;
+    font-size: 10px;
+  }
+
+  a.head-button {
+    width: 140px;
+  }
+
+  .social-circle li a {
+    width: 43px;
+    height: 43px;
+    font-size: 22px;
+    margin-right: -6px;
+    margin-left: -3px;
+  }
+
+  .social-circle li i {
+    margin:0;
+    line-height: 44px;
+    text-align: center;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+  .header-arrow {
+    margin-top: 18%;
+  }
+
+  .social-circle li a {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin-right: 6.1px;
+    /*margin-left: -3px;*/
+  }
+
+  .social-circle li i {
+    margin:0;
+    line-height: 48px;
+    text-align: center;
+  }
+
+}
+
+
+
 
 
 
